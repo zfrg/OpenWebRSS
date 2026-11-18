@@ -1,0 +1,21 @@
+{
+  "feeds": [
+    {
+      "title": "Solidot",
+      "url": "https://www.solidot.org/index.rss"
+    },
+    {
+      "title": "Hacker News",
+      "url": "https://hnrss.org/frontpage"
+    },
+    {
+      "title": "BBC 中文",
+      "url": "https://feeds.bbci.co.uk/zhongwen/simp/rss.xml"
+    }
+  ],
+  "storageKey": "openwebrss-reader-read-v1",
+  "corsProxy": "",
+  "requestTimeoutMs": 15000,
+  "maxReadArticles": 1500,
+  "dateLocale": "zh-CN"
+}
