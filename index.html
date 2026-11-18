@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f8f6" />
+    <meta name="description" content="一个简洁的 RSS 阅读器。" />
+    <title>WebRSS · RSS 阅读器</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="./">WebRSS</a>
+      <button id="refresh-button" type="button">刷新</button>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h1>好文章，慢慢读。</h1>
+        <p>来自订阅源的最新内容</p>
+      </section>
+      <nav id="feed-list" class="feed-list" aria-label="订阅源"></nav>
+      <p id="status" class="status" role="status" hidden></p>
+      <section id="article-list" class="article-list" aria-live="polite"></section>
+    </main>
+
+    <div id="reader" class="reader-backdrop" hidden>
+      <article class="reader" role="dialog" aria-modal="true" aria-labelledby="reader-title">
+        <button id="close-reader" class="close-button" type="button" aria-label="关闭文章">×</button>
+        <p id="reader-meta" class="reader-meta"></p>
+        <h2 id="reader-title"></h2>
+        <div id="reader-content" class="reader-content"></div>
+        <a id="reader-link" class="source-link" target="_blank" rel="noopener noreferrer">查看原文 ↗</a>
+      </article>
+    </div>
+  </body>
+</html>
